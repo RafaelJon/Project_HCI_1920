@@ -1,0 +1,137 @@
+.operator-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: skewX(-5deg);
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}
+.operator-item{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 1s;
+    margin: 0 10px;
+}
+
+.right{
+    margin-left: auto;
+}
+
+.operator-item:hover{
+    width: 50%;
+    transition: 1s;
+}
+
+.operator-item:hover .operator-data{
+    width: 85%;
+    transition: 1s;
+}
+
+.operator-item:hover .operator-data{
+    opacity: 1;
+}
+
+.operator-image{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.operator-image img{
+    object-fit: cover;
+    height: 250px;
+}
+
+.operator-name{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.operator-image img{
+    width: 100%;
+}
+
+.operator-data{
+    width: 5%;
+    margin: auto 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.operator-profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.operator-atr{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.atr-title{
+    color: #808080;
+    font-size: 15px;
+}
+
+.atr-content{
+    font-size: 20px;
+}
+
+.operator-name-big{
+    position: absolute;
+    margin: auto 0;
+}
+
+@media screen and (max-width:800px){
+    .operator-container{
+        flex-direction: column;
+        width: unset;
+    }
+
+    .operator-item:hover{
+        width: 100%;
+        transition: 1s;
+    }
+    
+    .operator-item:hover .operator-data{
+        width: 60%;
+        transition: 1s;
+    }
+    
+    .operator-item{
+        width: 100%;
+    }
+    
+    .operator-image{
+        width: 100px;
+    }
+
+    .operator-data{
+        width: 50%;
+    }
+
+    .operator-profile{
+        flex-direction: column;
+    }
+
+    .operator-name{
+        font-size: 20px;
+    }
+
+    .atr-title{
+        color: #808080;
+        font-size: 10px;
+    }
+    
+    .atr-content{
+        font-size: 18px;
+    }
+}
