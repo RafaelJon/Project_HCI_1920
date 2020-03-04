@@ -9,3 +9,7 @@ asseets link:
 	• Plane.png → https://vignette.wikia.nocookie.net/rainbowsix/images/2/25/Siege_Plane_Thumbnail.PNG/revision/latest?cb=20191020091123
 	• Oregon.png → https://vignette.wikia.nocookie.net/rainbowsix/images/4/48/Siege_Oregon_Thumbnail.PNG/revision/latest?cb=20191020064747
 	• Quarantine.jpg → https://wholesgame.com/wp-content/uploads/rainbow-six-quarantine-730x411.jpg
+	• quarantine_1.jpg → https://cdn.mos.cms.futurecdn.net/5HjH2ojNibH7kVyWKf3h2C-1200-80.jpg
+	• quarantine_2.jpg → https://www.thegamepost.com/wp-content/uploads/2020/02/rainbow-six-quarantine-getting-release-q4-2020-800x433.jpg
+	• quarantine_3.jpg → https://cdn.mos.cms.futurecdn.net/wvj5RkhybZVRzTLQvKU4CH.jpg
+	• quarantine_4.jpg → https://cdn.vox-cdn.com/thumbor/jxBaD1h0COciY0dbRLASEMw_2xE=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/16331455/r6q.jpg
