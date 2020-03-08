@@ -1,22 +1,92 @@
 .register-file{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: auto;
-    background-color: #333333;
-    border: 1px solid #333333;
+    max-width: 800px;
+    margin: 10px auto;
     border-radius: 12px;
     padding: 10px;
 }
 
-.register-container{
-    margin: 0 auto;
+.header-folder{
+    width: 30%;    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-folder{
+    align-items: center;   
+    display: flex;
+}
+
+.logo-folder span{
+    margin: auto 0;
+}
+
+.logo-folder img{
+    height: 30px;
+    margin: 0 10px;
+    object-fit: cover;
+}
+
+.header-folder span{
+    font-weight: 600;
+}
+
+.register-box{
     width: 100%;
-    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.file-bg{
+    opacity: 0.75;
+    position: absolute;
+    z-index: -1;
+    padding: 10px;
+    transform: translateY(-30px);
+}
+
+.header-bg{
+    width: 30%;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 12px;
+    padding: 10px;
+    transform: translateY(50%) translateX(-11px);
+}
+
+.register-bg{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 12px;
+    transform:  translateX(-11px);
+}
+
+.left-image{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+}
+
+.left-image img{
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.register-container{
+    width: 50%;
+    max-width: 300px;
+    padding: 20px;
 }
 
 .input-container{
     width: 100%;
+    height: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -24,35 +94,62 @@
 .input-box{
     position: relative;
     border: none;
+    font-size: 16px;
     border-bottom: 1px solid whitesmoke;
+    z-index: 2;
     background-color: rgba(0,0,0,0);
+    outline: none;
 }
 
-.input-container label{
+.input-box option{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-container #warning{
+    text-align: center;
+    color: #d4dc24;
+}
+
+.input-container button{
+    width: 30%;
+    margin: auto;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #36a9e0;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 2px;
+    color: #36a9e0;
+}
+
+.input-container button:active{
+    background-color: #36a9e0;
+    color: #000000;
+}
+
+.input-container .label-holder{
     position: relative;
-    transform: translateY(-100%);
-}
+    top: -20px;
+    font-size: 16px;
+    z-index: 1;
+    transition: all 0.3s;
+  }
 
-input:focus + label, input:valid + label{
-    top: -40px;
-    font-size: 11px;
+input:focus + .label-holder, input:valid + .label-holder{
+    top: -38px;
+    font-size: 12px;
     color: #00aced;
 }
 
-.header-folder{
-    width: 30%;
-    border: 1px solid #333333;
-    border-radius: 12px;
-    background-color: #333333;
-    transform: translateY(-50%) translateX(-11px);
-    padding: 10px;
-    display: flex;
+.check{
     flex-direction: row;
-    justify-content: space-between;
+    align-self: center;
+}
+.check input{
+    margin: auto 0;
 }
 
-.header-folder span{
-    font-weight: 600;
+.check label{
+    height: unset;
 }
 
 .circle{
@@ -61,30 +158,19 @@ input:focus + label, input:valid + label{
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    margin-right: auto 0;
 }
 
-label{
-    display: block;
-    position: relative;
-    top: -20px;
-    left: 0px;
-    color: #999;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 16px;
-    z-index: 1;
-    transition: all 0.3s ease-out;
-  }
+@media screen and (max-width:800px){
+    .register-box{
+        flex-direction: column;
+        align-items: center;
+    }
 
-  input{
-    display: block;
-    position: relative;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    width: 100%;
-    font-family: 'Helvetica', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    z-index: 2;
-  }
+    #title-folder{
+        display: none;
+    }
+
+    .register-container{
+        width: 100%;
+    }
+}

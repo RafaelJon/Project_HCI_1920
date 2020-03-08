@@ -25,11 +25,11 @@
             </a>
             <a class="nav-item" href="../html/quarantine.html">
                 <div class="nav-text">QUARANTINE</div>
-                <div class="bg-nav-item show-bg"></div>
+                <div class="bg-nav-item"></div>
             </a>
             <a class="nav-item" href="../html/pre-order.html">
                 <div class="nav-text">PRE-ORDER</div>
-                <div class="bg-nav-item"></div>
+                <div class="bg-nav-item show-bg"></div>
             </a>
         </div>
         <div class="drop-down">
@@ -50,23 +50,72 @@
     </header>
 
     <div class="container">
-        <div class="content-title">PRE-ORDER</div>
-        <div class="register-file">
-            <div class="header-folder">
-                <span>Register</span>
+        <div class="register-file" id="register-file">
+            <div class="header-folder" id="header-folder">
+                <div class="logo-folder">
+                    <img src="../assets/Logo.png" alt="">
+                    <span id="title-folder">REGISTER</span>
+                </div>
                 <span class="circle"></span> 
             </div>
-            <div class="register-container">
-                <div class="input-container">
-                    <input class="input-box" name="username" id="username" type="text">
-                    <label for="username">USERNAME</label>
-                    <input type="text" name="yourname" required autocomplete = "off" />
-      <label for="yourname">Your Name</label>
+            <div class="register-box" id="register-box">
+                <div class="left-image">
+                    <img src="../assets/Logo.png" alt="">
                 </div>
+                <div class="register-container">
+                    <div class="input-container">
+                        <input class="input-box" type="text" name="username" id="username" required>
+                        <label class="label-holder" for="username">Username</label>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="text" name="email" id="email" required>
+                        <label class="label-holder" for="email">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="password" name="password" id="password" required>
+                        <label class="label-holder" for="password">Password</label>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="password" name="conf-password" id="conf-password" required>
+                        <label class="label-holder" for="conf-password">Confirm Password</label>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="text" name="address" id="address" required>
+                        <label class="label-holder" for="address">Address</label>
+                    </div>
+                    <div class="input-container">
+                        <input class="input-box" type="number" name="copies" id="copies" required min="1">
+                        <label class="label-holder" for="copies">Copies</label>
+                    </div>
+                    <!-- isi type of game here -->
+                    <div class="input-container">
+                        <select class="input-box" name="type" id="type" required>
+                            <option value="0" disabled selected>Type of Game</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Premium">Premium</option>
+                        </select>
+                    </div>
+                    <div class="input-container check">
+                        <input class="input-box" type="checkbox" name="term" id="term" required>
+                        <label>I agree to term and service agreements.</label>
+                    </div>
+
+                    <div class="input-container">
+                        <label id="warning"></label>
+                    </div>
+                    <div class="input-container">
+                        <button onclick="submit()" type="submit">SUBMIT</button>
+                    </div>                    
+                </div>
+            </div>
+            <div class="file-bg">
+                <div class="header-bg"></div>
+                <div class="register-bg"></div>
             </div>
         </div>
     </div>
-
+    <br>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
@@ -79,4 +128,6 @@
         <div>@ 2020 Copyright of ERJEH Entertainment</div>
     </footer>
 </body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/pre-order.js"></script>
 </html>
