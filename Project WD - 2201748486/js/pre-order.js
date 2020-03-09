@@ -13,6 +13,8 @@ function autoWidth(){
 }
 
 function submit(){
+    $("#warning").css("color", "#d4dc24");
+
     if($("#username").val() == ""){
         $("#warning").text("Username can't be empty!")
     }
@@ -24,6 +26,9 @@ function submit(){
     }
     else if($("#password").val() == ""){
         $("#warning").text("Password can't be empty!")
+    }
+    else if(passAlphaNum()){
+        $("#warning").text("Password must contains alphabet and number!")
     }
     else if($("#conf-password").val() == ""){
         $("#warning").text("Confirmation password can't be empty!")
@@ -44,7 +49,8 @@ function submit(){
         $("#warning").text("You need to agree to term and service!")
     }
     else{
-        $("#warning").text("")
+        $("#warning").css("color", "#36a9e0");
+        $("#warning").text("Pre-Order success!")
     }
 }
 
@@ -71,10 +77,29 @@ function checkConfPass(){
     let confPass = $("#conf-password").val()
 
     if(pass == confPass){
+        return false
+    }
+    else{
+        return true
+    }
+}
+
+function passAlphaNum(){
+    let count_alpha = 0
+    let count_num = 0
+    let pass = $("#password").val()
+    for(let i = 0 ; i < pass.length; i++){
+        if((pass[i] >= "a" && pass[i] <= "z" ) || (pass[i] >= "A" && pass[i] <= "Z" )){
+            count_alpha++
+        }
+        else if($.isNumeric(pass[i])){
+            count_num++
+        }
+    }
+    if(count_num > 0 && count_alpha > 0){
         return false;
     }
     else{
         return true
     }
-
 }
