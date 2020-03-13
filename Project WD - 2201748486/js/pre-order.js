@@ -1,16 +1,13 @@
 $(document).ready(
     autoWidth()
 )
-
-$(window).on('resize',function (){
-    $(".file-bg").width($("#register-file").width()+"px")
-    $(".file-bg").height($("#register-file").height()+"px")
-});
-
 function autoWidth(){
     $(".file-bg").width($("#register-file").width()+"px")
     $(".file-bg").height($("#register-file").height()+"px")
 }
+
+$(window).on('resize',autoWidth);
+
 
 function submit(){
     $("#warning").css("color", "#d4dc24");
