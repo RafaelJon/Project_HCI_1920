@@ -17,4 +17,7 @@ assets link:
 	• year_1_season_2.jpg → https://vignette.wikia.nocookie.net/rainbowsix/images/7/73/Dust_Line.jpg/revision/latest/scale-to-width-down/1000?cb=20160422155200
 	• year_1_season_3.jpg → https://vignette.wikia.nocookie.net/rainbowsix/images/9/9d/Rb6-skull-rain-img.jpg/revision/latest?cb=20160725214013
 	• year_1_season_4.jpg → https://vignette.wikia.nocookie.net/rainbowsix/images/c/c2/R6S-red-crow-image.jpg/revision/latest/scale-to-width-down/1000?cb=20161118011623
-	
+	• news_1.png → https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/16zyOnA0oLDS4AGuhcILbu/81e03a6655887d8944c4f5fa4438dc79/StreamerCharmsNEWSEASON.png
+	• news_2.png → https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3vodDWPRtiQbCZ0P2Q8cgE/eaeac8a425576f9eed17a7de761eacd4/RB6_KeyArt_ProLeague_Y4S10_1920x1080_2.jpg
+	• news_3.png → https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2xPCWkLPTBNkOi2ATLk6T2/c59e37ca8618a72aa29fa2eade018c08/y5s11_patch-min.jpg
+	• new_season.png → https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2584xuwMoCH1FJc9n34jLo/379babb1afcacaebee9a047c2abbdec4/r6s-seasons-y5s1.jpg
